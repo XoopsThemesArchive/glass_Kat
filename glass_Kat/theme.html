@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- To use the XOOPS_Charset variable, insert <{$xoops_charset}> below -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_pagetitle}>, <{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_pagetitle}>, <{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="Microsoft FrontPage 5.0" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<{$xoops_url}>/backend.php" />
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- Uncomment The Following Line To Add Module Header -->
+<!-- <{$xoops_module_header}>  -->
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table width="100%"  border="0">
+  <tr>
+    <td>
+    <table width="1310"  border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse" bordercolor="#111111">
+      <tr>
+        <td valign="top" width="82" background="<{$xoops_imageurl}>images/Navbar_left.jpg">
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber1">
+          <tr>
+            <td width="100%">
+            <img border="0" src="<{$xoops_imageurl}>images/top_space.gif" width="315" height="4"></td>
+          </tr>
+          <tr>
+            <td width="100%">&nbsp;</td>
+          </tr>
+          <tr>
+            <td id="site" width="100%"><{$xoops_sitename}></td>
+          </tr>
+          <tr>
+            <td id="sitea" width="100%"><{$xoops_slogan}></td>
+          </tr>
+        </table>
+        </td>
+        <td valign="top" width="1079" background="<{$xoops_imageurl}>images/Navbar_center.jpg">&nbsp;</td>
+        <td valign="top" width="135">
+              <object
+        classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,79,0"
+        id="menu"
+        width="526" height="95"
+      >
+        <param name="movie" value="<{$xoops_imageurl}>images/menu.swf">
+        <param name="bgcolor" value="#FFFFFF">
+        <param name="quality" value="high">
+        <param name="allowscriptaccess" value="samedomain">
+                <embed
+          type="application/x-shockwave-flash"
+          pluginspage="http://www.macromedia.com/go/getflashplayer"
+          name="menu"
+          width="526" height="95"
+          src="<{$xoops_imageurl}>images/menu.swf"
+          bgcolor="#FFFFFF"
+          quality="high"
+          swliveconnect="true"
+          allowscriptaccess="samedomain"
+        >
+          <noembed>
+          </noembed>
+        </embed></object>
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td id="bacgroun"><table width="100%"  border="0">
+      <tr>
+<{if !empty($xoops_lblocks)}>        <td width="12%" valign="TOP" align="LEFT"><!-- Start left blocks loop -->
+<{foreach item=block from=$xoops_lblocks}>
+<div class="blockTitle"><img src="<{$xoops_imageurl}>images/dot.gif">&nbsp;<{$block.title}></div>
+<div class="blockContent"><{$block.content}></div>
+<{/foreach}>
+<!-- End left blocks loop --></td><{/if}>
+        <td width="11">&nbsp;</td>
+        <td id="cente" align="center" width="801">
+          <!-- Display center blocks if any -->
+            <{if $xoops_showcblock == 1}>
+
+            <table cellspacing="0">
+              <tr>
+              <div class="cente">
+                <td width="100%" colspan="2">
+                <!-- Start center-center blocks loop -->
+                  <{foreach item=block from=$xoops_ccblocks}>
+                  <table cellspacing="1" cellpadding="5">
+                    <tr>
+                      <td id="blockTitle">&nbsp;<{$block.title}></td>
+                    </tr>
+                    <tr>
+                      <td id="blockContent"><{$block.content}></td>
+                    </tr>
+                  </table>
+                  <{/foreach}>
+                <!-- End center-center blocks loop -->
+
+                </td>
+                </div>
+              </tr>
+              <tr>
+                <td width="50%">
+
+                <!-- Start center-left blocks loop -->
+                  <{foreach item=block from=$xoops_clblocks}>
+                  <table cellspacing="1" cellpadding="5">
+                    <tr>
+                      <td class="blockTitle">&nbsp;<{$block.title}></td>
+                    </tr>
+                    <tr>
+                      <td class="blockContent"><{$block.content}></td>
+                    </tr>
+                  </table>
+                  <{/foreach}>
+                <!-- End center-left blocks loop -->
+
+                </td><td width="50%">
+
+                <!-- Start center-right blocks loop -->
+                  <{foreach item=block from=$xoops_crblocks}>
+                  <table cellspacing="1" cellpadding="5">
+                    <tr>
+                      <td class="blockTitle">&nbsp;<{$block.title}></td>
+                    </tr>
+                    <tr>
+                      <td class="blockContent"><{$block.content}></td>
+                    </tr>
+                  </table>
+                  <{/foreach}>
+                <!-- End center-right blocks loop -->
+                </td>
+              </tr>
+            </table>
+            <{/if}>
+            <!-- End display center blocks -->
+              <{$xoops_contents}>
+          </td>
+        <td width="9">&nbsp;</td>
+<{if $xoops_showrblock == 1}>        <td width="257" valign="TOP" align="RIGHT"><!-- Start right blocks loop -->
+<{foreach item=block from=$xoops_rblocks}>
+<div class="blockTitle"><{$block.title}></div>
+<div class="blockContent"><{$block.content}></div>
+<{/foreach}>
+<!-- End right blocks loop --></td><{/if}>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>
+    <p align="center"><{$xoops_footer}></td>
+  </tr>
+</table>
+</body>
+</html>
